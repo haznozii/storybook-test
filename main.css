@@ -177,6 +177,78 @@ body {
     bottom: 10px;
     left: 10px; }
 
+.table-input-dialog-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1; }
+  .table-input-dialog-container .instructions {
+    position: absolute;
+    top: -13px;
+    right: 16%;
+    font-style: italic; }
+  .table-input-dialog-container .table-input-dialog {
+    display: flex;
+    flex-direction: column;
+    height: 100%; }
+    .table-input-dialog-container .table-input-dialog .table-input-dialog-header {
+      font-weight: 600; }
+    .table-input-dialog-container .table-input-dialog .table-input-dialog-body {
+      flex: 1 1;
+      overflow-y: auto; }
+    .table-input-dialog-container .table-input-dialog .table-input-dialog-row {
+      display: flex;
+      justify-content: space-around;
+      position: relative; }
+      .table-input-dialog-container .table-input-dialog .table-input-dialog-row.active {
+        background-color: #404040; }
+      .table-input-dialog-container .table-input-dialog .table-input-dialog-row .table-input-dialog-row-active-mark {
+        border-left: 6px solid #00aaed;
+        position: absolute;
+        height: 100%;
+        left: 0; }
+    .table-input-dialog-container .table-input-dialog .table-input-dialog-cell {
+      display: flex;
+      flex: 2 1;
+      justify-content: center;
+      align-items: center;
+      height: 45px;
+      border: 1px solid grey; }
+      .table-input-dialog-container .table-input-dialog .table-input-dialog-cell.table-input-dialog-cell-number {
+        flex: 0.5 1; }
+  .table-input-dialog-container .input-dialog-title {
+    font-size: large;
+    color: #292929; }
+  .table-input-dialog-container .input-dialog-instructions {
+    color: #00aaed;
+    font-size: large; }
+
+.input-dialog-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: calc(100% - 16px);
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding-top: 16px; }
+  .input-dialog-container .input-dialog-field-container {
+    display: flex;
+    flex: 1 1;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    justify-content: center; }
+  .input-dialog-container .input-dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .input-dialog-container .input-dialog .input-dialog-title {
+      font-size: large; }
+
 .confirmation-dialog {
   display: flex;
   flex-direction: column;
